@@ -1,0 +1,47 @@
+{
+  "name": "angular-component-test-support",
+  "version": "0.1.0",
+  "description": "Component testing helpers and utilities for Angular 2+",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:umd": "rollup -c",
+    "tsc": "tsc --module es2015",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pageobject-io/angular-component-test-support.git"
+  },
+  "keywords": [
+    "angular",
+    "component",
+    "test",
+    "utils",
+    "utilities",
+    "page object"
+  ],
+  "author": "pageobject.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pageobject-io/angular-component-test-support/issues"
+  },
+  "homepage": "https://github.com/pageobject-io/angular-component-test-support#readme",
+  "peerDependencies": {
+    "@angular/core": "^2.3.1 || >=4.0.0",
+    "jasmine": ">=2.5.3",
+    "jasmine-core": ">=2.5.2"
+  },
+  "devDependencies": {
+    "@angular/core": "^4.0.1",
+    "@types/jasmine": "2.5.38",
+    "rxjs": "5.0.1",
+    "zone.js": "0.8.5",
+    "jasmine": "2.5.3",
+    "jasmine-core": "2.5.2",
+    "rollup": "0.41.0",
+    "rollup-plugin-commonjs": "7.0.0",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-typescript2": "0.1.2",
+    "typescript": "2.2.2"
+  }
+}

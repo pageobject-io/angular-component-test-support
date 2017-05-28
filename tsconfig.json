@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true, 
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "lib": [
+      "es2015",
+      "DOM",
+      "ES2017.object"
+    ]
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
