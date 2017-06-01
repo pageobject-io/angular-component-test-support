@@ -1,6 +1,6 @@
 {
   "name": "angular-component-test-support",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Component testing helpers and utilities for Angular 2+",
   "main": "dist/index.js",
   "scripts": {
