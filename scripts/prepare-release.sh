@@ -11,10 +11,12 @@ npm run build:umd
 
 # deploy/ serves as a working directory to stage the release.
 mkdir deploy
+mkdir deploy/dist
+mkdir deploy/lib
 
 # Copy all components/ to deploy/
 cp -R ./dist/* ./deploy/dist
-cp -R ./dist/lib/* ./deploy/lib
+cp -R ./lib/* ./deploy/lib
 find deploy -type d -name 'spec' -exec rm -r {} +
 cp package.json ./deploy
 
