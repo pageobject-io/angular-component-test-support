@@ -13,7 +13,8 @@ npm run build:umd
 mkdir deploy
 
 # Copy all components/ to deploy/
-cp -R ./dist/* ./deploy/
+cp -R ./dist/* ./deploy/dist
+cp -R ./dist/lib/* ./deploy/lib
 find deploy -type d -name 'spec' -exec rm -r {} +
 cp package.json ./deploy
 
