@@ -57,6 +57,20 @@ export class ComponentPageBase {
         });
     }
 
+    protected getElementsByText(selector: string, text: string): any[] {
+        let elements: any = this.fixture.elementRef.nativeElement.querySelectorAll(selector);
+        return [].filter.call(elements, (element: Element) => {
+            return text === element.textContent;
+        });
+    }
+
+    protected getElementsByValue(selector: string, text: string): any[] {
+        let elements: any = this.fixture.elementRef.nativeElement.querySelectorAll(selector);
+        return [].filter.call(elements, (element: any) => {
+            return text === element.value;
+        });
+    }
+
     protected findChildComponent(debugElement: DebugElement, componentType: Type<any>, index: number = 0): any {
         let result: any = null;
         let i: number = 0;
